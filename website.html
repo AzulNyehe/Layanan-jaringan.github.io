@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Troubleshooting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Layanan Troubleshooting Komputer</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Permintaan Layanan</h2>
+            <form id="service-request-form" action="process_form.php" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="issue">Deskripsi Masalah:</label>
+                <textarea id="issue" name="issue" rows="4" required></textarea>
+
+                <label for="service-type">Jenis Layanan:</label>
+                <select id="service-type" name="service-type" required>
+                    <option value="network">Masalah Jaringan</option>
+                    <option value="hardware">Masalah Hardware</option>
+                </select>
+
+                <button type="submit">Kirim Permintaan</button>
+            </form>
+        </section>
+        <section class="estimate-section">
+            <h2>Estimasi Harga</h2>
+            <p>Estimasi harga akan dikirimkan ke email Anda setelah kami menerima permintaan Anda.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Layanan Troubleshooting Komputer</p>
+    </footer>
+</body>
+</html>
